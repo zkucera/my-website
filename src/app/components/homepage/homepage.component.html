@@ -1,4 +1,4 @@
-<div class = "poo">
+<div class = "whole">
 <div id = "landing" class = "portfolioSection">
     <div id = "jumboname" class = "jumotron jumbotron-fluid text-center" style = "height: 100%; vertical-align: middle" >
         <h1  class=" display-4" style = "color: white; position:relative; top:40%; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Zachary Kucera
@@ -10,7 +10,7 @@
 
     </div>    
 </div>
-<nav class="navbar sticky-top navbar-expand-lg navbar-custom justify-content-center">
+<nav class="navbar sticky-top navbar-expand-sm navbar-custom justify-content-center">
     <ul class="navbar-nav">
         <li class="nav-item ">
             <a class="nav-link" (click)="scrollToElement(about)" style = "cursor:pointer">ABOUT ME</a>
@@ -30,38 +30,111 @@
         <li class="nav-item">
             <a class="nav-link " (click)="scrollToElement(contact)" style = "cursor:pointer">CONTACT</a>
         </li>
+
     </ul>
 </nav>
 
+
     <div #about id = "aboutMe" class = "portfolioSection">
         <h1 class = "headers">About Me</h1>
-        <hr style="width: 15%; height:4px;border:none;color:#5D9AE3;background-color:#5D9AE3;" />
+        <hr class = "headerUnderline" />
+
+        <div class = "row">
+            <div class = "col-1-2" style ="align-content: right">
+                <img src = "../../../assets/UWO_LOGO_Stacked.png"> 
+            </div>
+            <div class = "col-1-3" style = "text-align: left">
+                <p>
+                    Hello! I am Zachary Kucera, a recent software engineering graduate from the University of Western Ontario. I have built software in professional, academic and personal settings; from websites to video games. 
+                </p>
+            </div>
+
+        
+        </div>
     </div>
     
     <div #skills id = "skills" class = "portfolioSection">
         <h1 class = "headers">Skills</h1>
-        <hr style="width: 15%; height:4px;border:none;color:#5D9AE3;background-color:#5D9AE3;" />
+        <hr class = "headerUnderline" />
+
+        <p style = "text-align: center;">
+            I have worked with many different programming languages, frameworks, engines and development tools. Angular and Node.js are my go to technologies for web applications, and C++ is my default programming language.
+        </p>
+        <div class = "row">
+            <div class ="col-1-4">
+                <b>
+                    Javascript
+                </b>
+            </div>
+            <div class ="col-1-4">
+                <b>
+                    C#
+                </b>
+            </div>
+            <div class ="col-1-4">
+                <b>
+                    Node.Js
+                </b> 
+            </div>
+            <div class ="col-1-4">
+                <b>
+                    C++
+                </b>
+            </div>
+        </div>
+        <div class = "row col-2-3 centered">
+            <div class = "col-1-2">
+                <h3 style = "text-align: center;">Development Tools</h3>
+                <ul class = "skill-list ">
+                    <li>Git</li>
+                    <li>MySQL</li>
+                    <li>Windows</li>
+                    <li>Linux</li>
+                </ul>
+            </div>
+            <div class = "col-1-2">
+                <h3 style = "text-align: center">Frameworks</h3>
+                <ul class = "skill-list ">
+                    <li>Angular</li>
+                    <li>Unity</li>
+                    <li>React</li>
+                    <li>Bootstrap</li>
+                </ul>
+
+            </div>
+        </div>
     </div>
     
     <div #education id = "education" class = "portfolioSection">
         <h1 class = "headers">Education</h1>
-        <hr style="width: 15%; height:4px;border:none;color:#5D9AE3;background-color:#5D9AE3;" />
+        <hr class = "headerUnderline" />
+        <div class = "media">
+            <img style = "width: 64px; height: 64px;" src = "../../../assets/UWO_LOGO_Stacked.png">
+            <div style = "padding-left: 2%" class = "media-body">
+                <h2><b>University of Western Ontario</b></h2>
+                <h5>Bachelor of Engineering Science. Software Engineering</h5>
+                <p>
+                    I studied the software development lifecycle, and software engineering best practices. During my time at Western I gained experience with many aspects of software development including  UML diagrams,  software development methodologies, relational databases and of course, programming. 
+                </p>
+                <p>Graduated : May 2019</p> 
+            </div>
+        </div>
     </div>
     
     <div #projects id = "projects" class = "portfolioSection">
-        <h1 class = "headers">Projects</h1>
-        <hr style="width: 15%; height:4px;border:none;color:#5D9AE3;background-color:#5D9AE3;" />
+        <h1 class = "headers">A Few Things I've Built</h1>
+        <hr class = "headerUnderline" />
     </div>
     
     <div #experience id = "experience" class = "portfolioSection">
         <h1 class = "headers">Experience</h1>
-        <hr style="width: 15%; height:4px;border:none;color:#5D9AE3;background-color:#5D9AE3;" />
+        <hr class = "headerUnderline" />
     </div>
     
-    <div #contact id = "contact" class = "portfolioSection">
+    <div #contact id = "contact" class = "portfolioSection" style = "height: 100vh">
         <form id ="contactForm">
             <h1 style = "text-align: center; color: white">Drop a Line!</h1>
-            <hr style="width: 30%; height:4px;border:none;color:#5D9AE3;background-color:#5D9AE3;" />
+            <hr style="width: 30%; height:4px;border:none;color:#0FA3B1;background-color:#0FA3B1;" />
             <h6 style = "text-align: center; color: white">
                 Lets have a chat! 
             </h6>
