@@ -1,13 +1,16 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { AltumTempusComponent } from './components/altum-tempus/altum-tempus.component';
 import { SelfStartComponent } from './components/self-start/self-start.component';
 import { ProjectTemplateComponent } from './components/project-template/project-template.component';
+
 
 @NgModule({
   declarations: [
@@ -15,11 +18,13 @@ import { ProjectTemplateComponent } from './components/project-template/project-
     HomepageComponent,
     AltumTempusComponent,
     SelfStartComponent,
-    ProjectTemplateComponent
+    ProjectTemplateComponent,
+
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FontAwesomeModule,
     AppRoutingModule
   ],
   providers: [],
